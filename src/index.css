@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary:        #e07b2a;
+  --primary-dark:   #c4691a;
+  --primary-light:  rgba(224, 123, 42, 0.1);
+  --primary-border: rgba(224, 123, 42, 0.3);
+  --secondary:      #1e2d3d;
+  --secondary-light:#2c3e50;
+  --light:          #f4f6f8;
+  --gray:           #7a8795;
+  --light-gray:     #e8ecf0;
+  --white:          #ffffff;
+  --text:           #1e2d3d;
+  --border:         #e2e8f0;
+
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.07);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.09);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.13);
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --section-py: 90px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  text-align: left;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section titles */
+.section-title {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.section-title h2 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--secondary);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.section-title p {
+  font-size: 1rem;
+  color: var(--gray);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.section-title .underline {
+  width: 44px;
+  height: 3px;
+  background: var(--primary);
+  margin: 12px auto 16px;
+  border-radius: 2px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 30px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.25s ease;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 4px 14px rgba(224,123,42,0.3);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(224,123,42,0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--secondary);
+  border-color: var(--white);
+}
+
+@media (max-width: 768px) {
+  :root { --section-py: 60px; }
+  .section-title { margin-bottom: 40px; }
+  .section-title h2 { font-size: 1.8rem; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .section-title h2 { font-size: 1.55rem; }
+  .section-title { margin-bottom: 32px; }
+}
+
+@media (max-width: 375px) {
+  .section-title h2 { font-size: 1.35rem; }
+}
