@@ -16,13 +16,13 @@ const team = [
     img: boshTexnologImg,
     name: 'Bosh Texnolog',
     role: 'Bosh Texnolog',
-    desc: "Ishlab chiqarish texnologiyalari va mahsulot sifatini nazorat qiladi. Ispaniya va Rossiya texnologiyalarini joriy etishda asosiy rol o'ynaydi.",
+    desc: "Yangi liniyalarni loyihalash va ishga tushirish bo'yicha mas'ul. Ispaniya va Rossiya texnologiyalarini joriy etishda asosiy rol o'ynaydi.",
   },
   {
     img: injinerImg,
     name: 'Muhandis',
     role: 'Bosh Muhandis',
-    desc: "Ishlab chiqarish jarayonlarini texnik jihatdan ta'minlaydi. Yangi liniyalarni loyihalash va ishga tushirish bo'yicha mas'ul.",
+    desc: "Ishlab chiqarish texnologiyalari va mahsulot sifatini nazorat qiladi. Ishlab chiqarish jarayonlarini texnik jihatdan ta'minlaydi.",
   },
   {
     img: sotuvImg,

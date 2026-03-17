@@ -21,7 +21,7 @@ import eliteHouse from '../assets/XORAZM ELITE HOUSE.png'
 
 const logos = [
   { src: p1,        alt: 'Hamkor 1'           },
-  { src: p2,        alt: 'Hamkor 2'           },
+  { src: versal,    alt: 'New City Versal',  large: true },
   { src: p3,        alt: 'Hamkor 3'           },
   { src: p4,        alt: 'Hamkor 4'           },
   { src: p5,        alt: 'Hamkor 5'           },
@@ -37,7 +37,7 @@ const logos = [
   { src: p15,       alt: 'Hamkor 15'          },
   { src: nbu,       alt: "O'zmilliybank"      },
   { src: gaz,       alt: 'Ozbekneftegaz'      },
-  { src: versal,    alt: 'New City Versal'    },
+  { src: p2,        alt: 'Hamkor 2'           },
   { src: eliteHouse,alt: 'Xorazm Elite House' },
 ]
 
@@ -52,7 +52,7 @@ export default function Partners() {
         </div>
         <div className="partners-grid">
           {logos.map((logo, i) => (
-            <div className="partner-logo" key={i}>
+            <div className={`partner-logo${logo.large ? ' partner-logo--large' : ''}`} key={i}>
               <img src={logo.src} alt={logo.alt} loading="lazy" />
             </div>
           ))}
