@@ -35,15 +35,15 @@ export default function Contact() {
                 <span className="info-icon"><MapPin size={20} /></span>
                 <div>
                   <strong>Manzil</strong>
-                  <p>Xorazm viloyati, Urganch tumani</p>
+                  <p>Xorazm viloyati, Urganch tumani, Orzu MFY</p>
                 </div>
               </div>
               <div className="info-item">
                 <span className="info-icon"><Phone size={20} /></span>
                 <div>
                   <strong>Telefon</strong>
-                  <p>+998 61 XXX-XX-XX</p>
-                  <p>+998 90 XXX-XX-XX</p>
+                  <p>+998 91 999 99 89</p>
+                  <p>+998 70 037 89 99</p>
                 </div>
               </div>
               <div className="info-item">

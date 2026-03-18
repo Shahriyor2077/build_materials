@@ -40,8 +40,9 @@ export default function Footer() {
           </div>
           <div className="footer-contact">
             <h4>Aloqa</h4>
-            <p><MapPin size={14} /> Xorazm viloyati, Urganch tumani</p>
-            <p><Phone size={14} /> +998 61 XXX-XX-XX</p>
+            <p><MapPin size={14} /> Xorazm viloyati, Urganch tumani, Orzu MFY</p>
+            <p><Phone size={14} /> +998 91 999 99 89</p>
+            <p><Phone size={14} /> +998 70 037 89 99</p>
             <p><Users size={14} /> Xodimlar: 30 nafar</p>
             <p><Clock size={14} /> Du–Sha: 8:00–18:00</p>
           </div>
