@@ -13,13 +13,27 @@ export default function Contact() {
   const handleSubmit = async e => {
     e.preventDefault()
     const text = `📩 Yangi xabar!\n\n👤 Ism: ${form.name}\n📞 Telefon: ${form.phone}\n💬 Xabar: ${form.message}`
+
     try {
-      await fetch(`https://api.telegram.org/bot8718062036:AAEqnljLwNpcNs-mI_r_fG3A5F-U69llukM/sendMessage`, {
+      const response = await fetch(`https://api.telegram.org/bot8718062036:AAEqnljLwNpcNs-mI_r_fG3A5F-U69llukM/sendMessage`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: '-5270878564', text })
+        body: JSON.stringify({
+          chat_id: -1003866642179,
+          text: text
+        })
       })
-    } catch (_) {}
+
+      if (response.ok) {
+        console.log('✅ Xabar muvaffaqiyatli yuborildi!')
+      } else {
+        const error = await response.json()
+        console.error('❌ Xatolik:', error.description)
+      }
+    } catch (error) {
+      console.error('Xabar yuborishda xatolik:', error)
+    }
+
     setSent(true)
     setForm({ name: '', phone: '', message: '' })
     setTimeout(() => setSent(false), 4000)
